@@ -11,6 +11,8 @@
 #import "MJRefresh.h"
 #import "MJRefreshFooterView.h"
 #import "InfoCell.h"
+#import "Reachability.h"
+
 @interface ViewController ()<MJRefreshBaseViewDelegate>
 {
     MJRefreshHeaderView *_header;
@@ -29,19 +31,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self isConnectionAvailable];
 	// init ad controller
     _adController = [DianJoyAdController sharedDianJoyAdController];
     [_adController setAdDelegate:self];
     [_adController setAppId:@"2652099a792fbc3d59f887113a3bb3d2"];
     _adFinishLoad = NO;
     
-    UIImageView *tab = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
-    tab.image = [UIImage imageNamed:@"tab.png"];
-    UITapGestureRecognizer *singleTap = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(top)] autorelease];
-    [tab addGestureRecognizer:singleTap];
-    [self.view addSubview:tab];
+//    UIImageView *tab = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+//    tab.image = [UIImage imageNamed:@"tab.png"];
+//    UITapGestureRecognizer *singleTap = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(top)] autorelease];
+//    [tab addGestureRecognizer:singleTap];
+//    [self.view addSubview:tab];
     
-    self.mytableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 50, 320, self.view.frame.size.height-40-6)];
+    self.mytableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, self.view.frame.size.height-55-6)];
     self.mytableView.dataSource = self;
     self.mytableView.delegate = self;
     [self.view addSubview:self.mytableView];
@@ -241,6 +245,40 @@
 -(void)top
 {
     [self.mytableView scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:YES];
+}
+
+-(BOOL) isConnectionAvailable{
+    
+    BOOL isExistenceNetwork = YES;
+    Reachability *reach = [Reachability reachabilityWithHostName:@"www.apple.com"];
+    switch ([reach currentReachabilityStatus]) {
+        case NotReachable:
+            isExistenceNetwork = NO;
+            //NSLog(@"notReachable");
+            break;
+        case ReachableViaWiFi:
+            isExistenceNetwork = YES;
+            //NSLog(@"WIFI");
+            break;
+        case ReachableViaWWAN:
+            isExistenceNetwork = YES;
+            //NSLog(@"3G");
+            break;
+    }
+    
+    if (!isExistenceNetwork) {
+        UIAlertView *myalert = [[UIAlertView alloc]
+                                initWithTitle:NSLocalizedString(@"Network error", @"Network error")
+                                message:NSLocalizedString(@"Network isnt connected.Please check.", nil)
+                                delegate:self
+                                cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                                otherButtonTitles:nil];
+        
+        [myalert show];
+        
+        [myalert release];
+    }
+    return isExistenceNetwork;
 }
 
 #pragma mark - DianJoyAdControllerDelegate callback

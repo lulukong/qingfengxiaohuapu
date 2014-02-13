@@ -10,6 +10,10 @@
 		AFACD90418811C0300A792BD /* AdvertisementCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFACD90318811C0300A792BD /* AdvertisementCell.m */; };
 		AFACD9061883BB5C00A792BD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFACD9051883BB5C00A792BD /* QuartzCore.framework */; };
 		AFACD9081883BB6F00A792BD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFACD9071883BB6F00A792BD /* AdSupport.framework */; };
+		AFB0365918A9EC9B000F0333 /* tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB0365818A9EC9B000F0333 /* tab@2x.png */; };
+		AFB0365B18A9ECA2000F0333 /* tab7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB0365A18A9ECA2000F0333 /* tab7@2x.png */; };
+		AFB1460018AB862500084EAE /* tab6.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB145FE18AB862500084EAE /* tab6.png */; };
+		AFB1460118AB862500084EAE /* tab6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AFB145FF18AB862500084EAE /* tab6@2x.png */; };
 		AFB221821875129200764824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB221811875129200764824 /* Foundation.framework */; };
 		AFB221841875129200764824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB221831875129200764824 /* CoreGraphics.framework */; };
 		AFB221861875129200764824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB221851875129200764824 /* UIKit.framework */; };
@@ -105,6 +109,7 @@
 		AFCC4519187A891400EE79E4 /* cell.png in Resources */ = {isa = PBXBuildFile; fileRef = AFCC4518187A891400EE79E4 /* cell.png */; };
 		AFCC451B187A8FA600EE79E4 /* tab.png in Resources */ = {isa = PBXBuildFile; fileRef = AFCC451A187A8FA600EE79E4 /* tab.png */; };
 		AFCDBDBA188D0FBC0086FE66 /* libdianJoy_nativeAD_iOS_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCDBDB9188D0FBC0086FE66 /* libdianJoy_nativeAD_iOS_SDK.a */; };
+		AFE2729B18A8AE20007EFF90 /* tab7.png in Resources */ = {isa = PBXBuildFile; fileRef = AFE2729A18A8AE20007EFF90 /* tab7.png */; };
 		D80F1A1B18759C4F003E4A69 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D80F1A1318759C4F003E4A69 /* MJRefresh.bundle */; };
 		D80F1A1C18759C4F003E4A69 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F1A1618759C4F003E4A69 /* MJRefreshBaseView.m */; };
 		D80F1A1D18759C4F003E4A69 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D80F1A1818759C4F003E4A69 /* MJRefreshFooterView.m */; };
@@ -126,6 +131,10 @@
 		AFACD90318811C0300A792BD /* AdvertisementCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertisementCell.m; sourceTree = "<group>"; };
 		AFACD9051883BB5C00A792BD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		AFACD9071883BB6F00A792BD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
+		AFB0365818A9EC9B000F0333 /* tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab@2x.png"; sourceTree = "<group>"; };
+		AFB0365A18A9ECA2000F0333 /* tab7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab7@2x.png"; sourceTree = "<group>"; };
+		AFB145FE18AB862500084EAE /* tab6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab6.png; sourceTree = "<group>"; };
+		AFB145FF18AB862500084EAE /* tab6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab6@2x.png"; sourceTree = "<group>"; };
 		AFB2217E1875129200764824 /* xiaohuapu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaohuapu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB221811875129200764824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AFB221831875129200764824 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -243,6 +252,7 @@
 		AFCC451A187A8FA600EE79E4 /* tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab.png; sourceTree = "<group>"; };
 		AFCDBDB9188D0FBC0086FE66 /* libdianJoy_nativeAD_iOS_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdianJoy_nativeAD_iOS_SDK.a; sourceTree = "<group>"; };
 		AFCDBDBB188D0FCD0086FE66 /* DianJoyAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DianJoyAdController.h; sourceTree = "<group>"; };
+		AFE2729A18A8AE20007EFF90 /* tab7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab7.png; sourceTree = "<group>"; };
 		D80F1A1318759C4F003E4A69 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 		D80F1A1418759C4F003E4A69 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
 		D80F1A1518759C4F003E4A69 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
@@ -359,6 +369,11 @@
 				AFB2218F1875129200764824 /* xiaohuapu-Prefix.pch */,
 				AFCC4518187A891400EE79E4 /* cell.png */,
 				AFCC451A187A8FA600EE79E4 /* tab.png */,
+				AFE2729A18A8AE20007EFF90 /* tab7.png */,
+				AFB0365818A9EC9B000F0333 /* tab@2x.png */,
+				AFB0365A18A9ECA2000F0333 /* tab7@2x.png */,
+				AFB145FE18AB862500084EAE /* tab6.png */,
+				AFB145FF18AB862500084EAE /* tab6@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -583,6 +598,7 @@
 				AFCB3B6C187E7A22009361D1 /* 18.jpg in Resources */,
 				AFCB3B66187E7A22009361D1 /* 12.jpg in Resources */,
 				AFB25DC0187D4EB900EC5A86 /* 80.png in Resources */,
+				AFB0365B18A9ECA2000F0333 /* tab7@2x.png in Resources */,
 				AFCB3B7D187E7A22009361D1 /* 35.jpg in Resources */,
 				AFCB3B6F187E7A22009361D1 /* 21.jpg in Resources */,
 				AFCB3B83187E7A22009361D1 /* 40.jpg in Resources */,
@@ -594,12 +610,14 @@
 				AFCB3B92187E7A22009361D1 /* 9.jpg in Resources */,
 				AFCB3B95187E7A69009361D1 /* 1.jpg in Resources */,
 				AFCB3B87187E7A22009361D1 /* 44.jpg in Resources */,
+				AFB0365918A9EC9B000F0333 /* tab@2x.png in Resources */,
 				AFCB3B7C187E7A22009361D1 /* 34.jpg in Resources */,
 				AFB25DBB187D4EB900EC5A86 /* 29.png in Resources */,
 				AFCB3B89187E7A22009361D1 /* 46.jpg in Resources */,
 				AFCB3B76187E7A22009361D1 /* 29.jpg in Resources */,
 				AFCB3B7A187E7A22009361D1 /* 32.jpg in Resources */,
 				AFCB3B6A187E7A22009361D1 /* 16.jpg in Resources */,
+				AFB1460018AB862500084EAE /* tab6.png in Resources */,
 				AFCB3B6E187E7A22009361D1 /* 20.jpg in Resources */,
 				AFCB3B6B187E7A22009361D1 /* 17.jpg in Resources */,
 				AFCB3B88187E7A22009361D1 /* 45.jpg in Resources */,
@@ -610,6 +628,7 @@
 				AFCB3B64187E7A22009361D1 /* 10.jpg in Resources */,
 				AFB25DB7187D4EB900EC5A86 /* 1024.png in Resources */,
 				AFCC451B187A8FA600EE79E4 /* tab.png in Resources */,
+				AFE2729B18A8AE20007EFF90 /* tab7.png in Resources */,
 				AFB25DBC187D4EB900EC5A86 /* 40.png in Resources */,
 				AFCB3B82187E7A22009361D1 /* 4.jpg in Resources */,
 				AFCB3B73187E7A22009361D1 /* 26.jpg in Resources */,
@@ -626,6 +645,7 @@
 				AFB25DB9187D4EB900EC5A86 /* 152.png in Resources */,
 				AFCB3B8A187E7A22009361D1 /* 47.jpg in Resources */,
 				AFCB3B67187E7A22009361D1 /* 13.jpg in Resources */,
+				AFB1460118AB862500084EAE /* tab6@2x.png in Resources */,
 				AFCB3B75187E7A22009361D1 /* 28.jpg in Resources */,
 				AFCB3B7B187E7A22009361D1 /* 33.jpg in Resources */,
 				AFCB3B90187E7A22009361D1 /* 7.jpg in Resources */,

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+@synthesize navController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -16,10 +17,22 @@
     // Override point for customization after application launch.
     ViewController *viewController = [[ViewController alloc] init];
     self.window.rootViewController = viewController;
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackTranslucent];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    float verson = [[[UIDevice currentDevice] systemVersion] floatValue];
+    if (verson >= 7.0) {
+        [self.navController.navigationBar setBackgroundImage:[UIImage imageNamed:@"tab7.png"] forBarMetrics:UIBarMetricsDefault];
+    }
+    else 
+    {
+        [self.navController.navigationBar setBackgroundImage:[UIImage imageNamed:@"tab.png"] forBarMetrics:UIBarMetricsDefault];
+    }
+    //    [self.window addSubview:self.navController.view];
+    self.window.rootViewController = self.navController;
+    
     [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
-    
-   
     
     return YES;
 }
@@ -49,6 +62,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end
